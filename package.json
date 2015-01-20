@@ -1,0 +1,21 @@
+{
+  "name": "minipress",
+  "version": "0.0.1",
+  "description": "Minimal routing and config for Express",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiem/minipress"
+  },
+  "keywords": [
+    "express",
+    "routing",
+    "config",
+    "mvc",
+    "framework",
+    "minimal"
+  ],
+  "author": "Jie Meng-Gerard",
+  "license": "MIT",
+  "homepage": "https://github.com/jiem/minipress"
+}
