@@ -16,7 +16,7 @@ Create 1 file `router.json`
 {
   
   "GET /user/:name": [
-    "controllers/is_logged",
+    "middlewares/check_logged_in",
     "controllers/user.get"
   ],
 
@@ -33,7 +33,7 @@ Create 1 file `router.json`
 
 Create the associated controller/middleware files, examples: 
 
-File `controllers/is_logged.js`
+File `middlewares/check_logged_in.js`
 ```javascript
 module.exports = function(req, res, next) {
 
@@ -49,7 +49,6 @@ File `controllers/user.js`
 ```javascript
 var User = require('../models/user');
 
-//==============================================================================
 exports.get = function(req, res) {
   
   User.get(req.params.name, function(err, user) {
@@ -62,7 +61,6 @@ exports.get = function(req, res) {
   
 };
 
-//==============================================================================
 exports.create = function(req, res) {
 
   User.create({
