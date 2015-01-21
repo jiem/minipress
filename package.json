@@ -1,6 +1,6 @@
 {
   "name": "minipress",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Minimal routing and config for Express",
   "main": "index.js",
   "repository": {
@@ -17,5 +17,8 @@
   ],
   "author": "Jie Meng-Gerard",
   "license": "MIT",
-  "homepage": "https://github.com/jiem/minipress"
+  "homepage": "https://github.com/jiem/minipress",
+  "dependencies": {
+    "express": "^4.11.0"
+  }
 }
